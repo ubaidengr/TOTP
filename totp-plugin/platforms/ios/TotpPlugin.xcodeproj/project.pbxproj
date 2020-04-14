@@ -8,15 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		09A4C8575F3F46F099483DD9 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED773D230F5E4C379786DCD6 /* KeychainStore.swift */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
-		4F1DB6A47CE447F8B79B4F43 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5959FD4EA83F45E7B807E20E /* Token.swift */; };
+		430F94C609E049829ED60EF8 /* TotpPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80EA2FC330543629EC304EE /* TotpPlugin.swift */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		84C9FDD14D27432F870052EE /* TotpPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D699E80D434135AB1E09AF /* TotpPlugin.swift */; };
-		B40870A90AC04A60B261DE80 /* OTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307DF7C0120143FD9B502708 /* OTP.swift */; };
+		A3853BFC7D2246278BCBD083 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5944D6828A4BBC93ECF1F5 /* Base32.swift */; };
+		A8F73950BDC0466D895042E1 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FEA126E43A411889C33B6F /* Token.swift */; };
+		A961BEDA83EB419C95D2D95C /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6DF7BFA2CC435984EDD9B6 /* shim.swift */; };
+		E009431AE018460081FA8096 /* Base16.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB26E43B9D374157869BA9E3 /* Base16.swift */; };
+		E6E45318A52449DCB2CEE4EF /* OTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79482F62E984538A976B04A /* OTP.swift */; };
+		FE5BD002102B4A63A01FEC16 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1460844E7243BCB895E8F4 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +62,21 @@
 		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
-		307DF7C0120143FD9B502708 /* OTP.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = OTP.swift; path = "cordova-plugin-totpplugin/OTP.swift"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TotpPlugin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TotpPlugin-Prefix.pch"; sourceTree = "<group>"; };
-		41D699E80D434135AB1E09AF /* TotpPlugin.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = TotpPlugin.swift; path = "cordova-plugin-totpplugin/TotpPlugin.swift"; sourceTree = "<group>"; };
-		5959FD4EA83F45E7B807E20E /* Token.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Token.swift; path = "cordova-plugin-totpplugin/Token.swift"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = TotpPlugin/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		6D5944D6828A4BBC93ECF1F5 /* Base32.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Base32.swift; path = "cordova-plugin-totpplugin/Base32.swift"; sourceTree = "<group>"; };
+		6F6DF7BFA2CC435984EDD9B6 /* shim.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = shim.swift; path = "cordova-plugin-totpplugin/shim.swift"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TotpPlugin-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TotpPlugin-Info.plist"; path = "TotpPlugin/TotpPlugin-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		92FEA126E43A411889C33B6F /* Token.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Token.swift; path = "cordova-plugin-totpplugin/Token.swift"; sourceTree = "<group>"; };
+		B79482F62E984538A976B04A /* OTP.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = OTP.swift; path = "cordova-plugin-totpplugin/OTP.swift"; sourceTree = "<group>"; };
+		C80EA2FC330543629EC304EE /* TotpPlugin.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = TotpPlugin.swift; path = "cordova-plugin-totpplugin/TotpPlugin.swift"; sourceTree = "<group>"; };
+		DB26E43B9D374157869BA9E3 /* Base16.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Base16.swift; path = "cordova-plugin-totpplugin/Base16.swift"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		ED773D230F5E4C379786DCD6 /* KeychainStore.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = KeychainStore.swift; path = "cordova-plugin-totpplugin/KeychainStore.swift"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = TotpPlugin/config.xml; sourceTree = "<group>"; };
+		FA1460844E7243BCB895E8F4 /* StringExtension.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = "cordova-plugin-totpplugin/StringExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,9 +181,14 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				41D699E80D434135AB1E09AF /* TotpPlugin.swift */,
-				5959FD4EA83F45E7B807E20E /* Token.swift */,
-				307DF7C0120143FD9B502708 /* OTP.swift */,
+				C80EA2FC330543629EC304EE /* TotpPlugin.swift */,
+				92FEA126E43A411889C33B6F /* Token.swift */,
+				B79482F62E984538A976B04A /* OTP.swift */,
+				DB26E43B9D374157869BA9E3 /* Base16.swift */,
+				6D5944D6828A4BBC93ECF1F5 /* Base32.swift */,
+				6F6DF7BFA2CC435984EDD9B6 /* shim.swift */,
+				FA1460844E7243BCB895E8F4 /* StringExtension.swift */,
+				ED773D230F5E4C379786DCD6 /* KeychainStore.swift */,
 			);
 			name = Plugins;
 			path = TotpPlugin/Plugins;
@@ -301,9 +316,14 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				84C9FDD14D27432F870052EE /* TotpPlugin.swift in Sources */,
-				4F1DB6A47CE447F8B79B4F43 /* Token.swift in Sources */,
-				B40870A90AC04A60B261DE80 /* OTP.swift in Sources */,
+				430F94C609E049829ED60EF8 /* TotpPlugin.swift in Sources */,
+				A8F73950BDC0466D895042E1 /* Token.swift in Sources */,
+				E6E45318A52449DCB2CEE4EF /* OTP.swift in Sources */,
+				E009431AE018460081FA8096 /* Base16.swift in Sources */,
+				A3853BFC7D2246278BCBD083 /* Base32.swift in Sources */,
+				A961BEDA83EB419C95D2D95C /* shim.swift in Sources */,
+				FE5BD002102B4A63A01FEC16 /* StringExtension.swift in Sources */,
+				09A4C8575F3F46F099483DD9 /* KeychainStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

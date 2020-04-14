@@ -23,4 +23,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <plugin name="cordova-plugin-totpplugin" spec="https://github.com/ubaidengr/TOTP_Plugin.git" />
+    <engine name="ios" spec="^5.1.1" />
 </widget>
