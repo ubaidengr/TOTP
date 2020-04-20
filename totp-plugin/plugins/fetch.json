@@ -10,7 +10,7 @@
   "cordova-plugin-totpplugin": {
     "source": {
       "type": "registry",
-      "id": "https://github.com/ubaidengr/TOTP_Plugin.git"
+      "id": "git+https://github.com/ubaidengr/TOTP_Plugin.git"
     },
     "is_top_level": true,
     "variables": {}

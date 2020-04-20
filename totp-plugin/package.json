@@ -13,7 +13,7 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "cordova-ios": "^5.1.1",
+    "cordova-ios": "^4.5.5",
     "cordova-plugin-add-swift-support": "^1.7.2",
     "cordova-plugin-totpplugin": "git+https://github.com/ubaidengr/TOTP_Plugin.git",
     "cordova-plugin-whitelist": "1"

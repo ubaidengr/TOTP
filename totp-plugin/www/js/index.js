@@ -40,6 +40,15 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Events: ' + id);
+        
+        window.plugins.totpPlugin.generate('otpauth://totp/ubaid.engr%40yahoo.com?secret=2y53rhvk4zqiyauigjnz5vrcsv5cqznd2th5a4umqk6ncnecis2afopr&algorithm=SHA1&digits=6&period=30', function(code) {
+                                           console.log('Excelsior!');
+                                           console.log(code);
+                                           }, function(err) {
+                                           console.log('Uh oh... ' + err);
+                                           });
+        
+        console.log('Received Events End: ' + id);
     }
 };
 
